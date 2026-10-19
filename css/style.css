@@ -1,0 +1,624 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.main-color {
+    color: #cbfe1c;
+    transition: all 0.3s;
+
+}
+
+.main-btn {
+    background-color: #cbfe1c;
+    color: black;
+    transition: all 0.3s;
+}
+
+.main-border {
+    border: 1.6px solid #cbfe1c;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Days One", sans-serif;
+}
+
+p,
+a,
+button,
+input,
+select {
+    font-family: "Chakra Petch", sans-serif;
+
+}
+
+/* Home start */
+
+
+.active {
+    color: #cbfe1c !important;
+}
+
+.nav-link,
+.nav-icons {
+    transition: all 0.3s;
+}
+
+.notfi {
+    display: none;
+}
+
+.nav-link:hover,
+.nav-icons:hover i,
+.notfi:hover {
+    color: #cbfe1c !important;
+    cursor: pointer;
+
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: #cbfe1c;
+}
+
+.sign-in-btn:hover {
+    background-color: #cbfe1c;
+}
+
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.btn-shine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.5),
+            transparent);
+    transition: 0.5s;
+}
+
+.btn-shine:hover::before {
+    left: 150%;
+}
+
+.home {
+    min-height: 100vh;
+    background-image:
+        linear-gradient(#000000e0, #000000e0),
+        url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.second-btn {
+    transition: all 0.3s;
+}
+
+.second-btn:hover {
+    background-color: #cbfe1c !important;
+    color: black;
+}
+
+
+.home .image {
+    background-image: url(../images/hero-img.png);
+    background-position: center center;
+    background-size: cover;
+    height: 384px;
+    position: relative;
+}
+
+
+
+.active-players {
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+}
+
+.image-border {
+    padding: 3px;
+    background: linear-gradient(135deg,
+            #c8ff00 0%,
+            #8cff00 35%,
+            #00ff66 70%,
+            #00d9ff 100%);
+}
+
+/* Home end */
+
+
+/* our games start */
+.our-games,
+.our-team {
+    background-color: #0b0e13;
+}
+
+.our-games .small-title,
+.what-we-do .small-title,
+.our-team .small-title,
+.contact-us .small-title {
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.small-title::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 2px;
+    top: 50%;
+    left: 39%;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg,
+            transparent,
+            #cbfe1c);
+}
+
+.small-title::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 2px;
+    top: 50%;
+    right: 39%;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #cbfe1c, transparent);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    transition: all 0.3s;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    border-color: #cbfe1c;
+    color: #cbfe1c;
+}
+
+.latest-indicators {
+    margin-top: -30px;
+
+}
+
+.latest-games img {
+    aspect-ratio: 16/11;
+    object-fit: cover;
+}
+
+.latest-games {
+    border: 2px solid #0b0e13;
+    transition: all 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+
+.latest-games:hover {
+    border: 2px solid #cbfe1c;
+}
+
+.latest-games::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, transparent, #cbfe1c);
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+.latest-games:hover::before {
+    opacity: 1;
+}
+
+.latest-games .pop-bottom {
+    color: black;
+    font-weight: 700;
+    font-size: 1.125rem;
+    position: absolute;
+    bottom: -25%;
+    left: 10%;
+    transition: all 0.3s;
+    z-index: 3;
+
+}
+
+.latest-games:hover .pop-bottom {
+    bottom: 5%;
+}
+
+.latest-games img {
+    transition: all 0.5s;
+}
+
+.latest-games:hover img {
+    transform: scale(1.1);
+
+}
+
+.pop-up {
+    position: absolute;
+    top: -15%;
+    left: 10%;
+    transition: all 0.3s;
+}
+
+.latest-games:hover .pop-up {
+    top: 5%;
+}
+
+.pop-up-left,
+.pop-up-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: .75rem;
+    font-weight: 700;
+    width: fit-content;
+
+}
+
+/* our games end */
+
+
+/* what we do start */
+.what-we-do {
+    background-color: #0b0e13;
+    overflow-x: hidden;
+}
+
+.what-we-do .image img {
+    object-fit: cover;
+    aspect-ratio: 4/3.4;
+}
+
+.what-we-do .inner {
+    background-color: #1a1a1a;
+    border: 2px solid #1e2939;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.what-we-do .inner::before {
+    content: "";
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    border-top: 1.5rem solid #cbfe1c;
+    border-right: 1.5rem solid transparent;
+    transition: all 0.3s;
+}
+
+.what-we-do .inner::after {
+    content: "";
+    position: absolute;
+    bottom: -15%;
+    right: -15%;
+    border-bottom: 1.5rem solid #cbfe1c;
+    border-left: 1.5rem solid transparent;
+    transition: all 0.3s;
+}
+
+.what-we-do .inner:hover::after {
+
+    bottom: 5%;
+    right: 5%;
+
+}
+
+.what-we-do .inner:hover::before {
+    top: 5%;
+    left: 5%;
+}
+
+.what-we-do .inner:hover {
+
+    border: 2px solid #cbfe1c;
+}
+
+.what-we-do .inner:hover .icon {
+    background-color: #cbfe1c;
+    color: black;
+}
+
+.what-we-do .inner .icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: #1e2939;
+    color: #cbfe1c;
+    transition: all 0.3s;
+}
+
+
+.max-width {
+    width: 142px;
+}
+
+.image {
+    height: 251.2px;
+}
+
+.holder {
+    position: relative;
+
+}
+
+.holder::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(to left,
+            transparent,
+            #cbfe1c,
+            #cbfe1c,
+            transparent);
+    box-shadow: 1px 1px 10px #cbfe1c;
+
+}
+
+.item {
+    flex: 0 0 auto;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+}
+
+.sliders-holder {
+    position: relative;
+}
+
+.sliders-holder::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 100%;
+    background-color: #c9fe1c9b;
+    border-radius: 50%;
+    filter: blur(50px);
+    margin-bottom: 50px;
+}
+
+.slider-1 {
+    display: flex;
+    gap: 20px;
+    animation: slider-1 20s linear infinite;
+}
+
+.slider-2 {
+    display: flex;
+    gap: 20px;
+    animation: slider-2 20s linear infinite;
+}
+
+@keyframes slider-1 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes slider-2 {
+
+    from {
+        transform: translate(-100%);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+
+
+/* what we do end */
+
+
+
+/* our team start */
+
+
+.our-team .info {
+    max-width: 208px;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.our-team .game {
+    font-size: .875rem;
+}
+
+.our-team .rank {
+    font-size: .75rem;
+}
+
+.our-team .n-name {
+    font-size: 1.125rem;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.our-team .inner {
+    cursor: pointer;
+}
+
+
+.our-team .inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: grayscale(100%);
+    z-index: 3;
+    transition: transform 0.8s;
+}
+
+.our-team .inner:hover::before {
+    transform: translateY(-100%);
+}
+
+/* our team end */
+
+
+
+/* contact us start */
+
+.contact-us {
+    background-color: #101725;
+}
+
+.contact-us .icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: #cbfe1c;
+}
+
+.contact-us .details,
+.contact-us .form {
+    background-color: #1E2939;
+
+}
+
+.contact-us .details-2 {
+    background: linear-gradient(90deg, #cbfe1c, #05df72);
+
+}
+
+.contact-us .social {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: black;
+    transition: all 0.3s;
+}
+
+.contact-us .social:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-us label,
+.contact-us .support p,
+.contact-us .average p {
+    font-size: .875rem;
+    color: #d1d5dc;
+}
+
+.contact-us input,
+.contact-us select,
+.contact-us textarea {
+    background-color: #364153;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.contact-us input:focus,
+.contact-us select:focus,
+.contact-us textarea:focus {
+    box-shadow: none;
+    background-color: #364153;
+    border: 2px solid #cbfe1c;
+}
+
+.contact-us input::placeholder,
+.contact-us select,
+.contact-us textarea::placeholder {
+    color: lightgray;
+}
+
+.contact-us textarea {
+    resize: none;
+}
+
+.contact-us .contact-holder {
+    flex-wrap: nowrap;
+}
+
+.contact-us input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-us input[type="checkbox"]:focus {
+    outline: 2px solid #cbfe1c;
+}
+
+.form-button {
+    font-size: 1.125rem;
+}
+
+/* contact us end */
+
+
+/* footer start */
+.social-visit a,
+.games-visit a,
+.terms a {
+    color: #99a1af;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-visit a:hover,
+.games-visit a:hover,
+.terms a:hover {
+    color: #cbfe1c;
+}
+
+
+
+
+
+
+
+/* footer end */

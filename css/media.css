@@ -1,0 +1,346 @@
+@media (max-width:768px) {
+
+    /* home and nav start */
+    .nav-rs {
+        flex-direction: column;
+    }
+
+    .nav-coll {
+        width: 100%;
+    }
+
+
+    .notfi {
+        display: block;
+    }
+
+    .home-row {
+        flex-direction: column;
+        margin-top: 200px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home {
+        min-height: 150vh;
+    }
+
+    .main-btn,
+    .second-btn {
+        width: 90%;
+        margin: auto;
+    }
+
+    .home-sm-left,
+    .home-sm-right {
+        width: 100%;
+    }
+
+    .active-players {
+        bottom: 0;
+        right: 70%;
+    }
+
+    /* home and nav end */
+
+
+
+    /* our games start */
+
+
+    .small-title::before {
+        left: 15%;
+    }
+
+    .small-title::after {
+        right: 15%;
+    }
+
+    .games-row {
+        display: flex;
+    }
+
+    .latest-rs {
+        width: 100%;
+    }
+
+    .latest-rs-2 {
+        display: none;
+    }
+
+    /* our games end */
+
+
+    /* what we do start */
+
+    .we-do-rs,
+    .we-do-rs-img {
+        width: 50%;
+    }
+
+
+    .we-do-rs-img img {
+        height: 100%;
+    }
+
+    .holder::before {
+        width: 80%;
+        bottom: -5%;
+    }
+
+
+    /* what we do end */
+
+
+
+    /*our team start */
+
+
+    .team-rs {
+        width: 100%;
+    }
+
+    /*our team end */
+
+
+
+
+
+
+
+
+    /*contact us start */
+
+    .contact-rs {
+        flex-direction: column;
+        gap: 40px !important;
+    }
+
+    .details-rs,
+    .fname-rs,
+    .lname-rs,
+    .form-button {
+        width: 100%;
+    }
+
+    .form-rs {
+        width: 90%;
+        margin: auto;
+        padding: 1rem !important;
+    }
+
+
+
+    .flname-rs {
+        flex-direction: column;
+    }
+
+    /*contact us end */
+
+
+
+    /*footer start */
+
+    .footer-rs {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-rs-item {
+        width: 100%;
+    }
+
+    .social-visit {
+        gap: 50px !important;
+    }
+
+    .footer-rs-cright {
+        flex-direction: column;
+    }
+
+    .footer-rs-cright-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /*footer end */
+
+
+
+
+
+}
+
+@media (min-width:769px) and (max-width:992px) {
+
+    /* home and nav start */
+    .nav-rs {
+        flex-direction: column;
+    }
+
+    .nav-coll {
+        width: 100%;
+    }
+
+
+    .notfi {
+        display: block;
+    }
+
+    .home-row {
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 100px; */
+        text-align: center;
+        gap: 30px;
+    }
+
+
+    .main-btn,
+    .second-btn {
+        width: 90%;
+        margin: auto;
+    }
+
+    .home-sm-left,
+    .home-sm-right {
+        width: 90%;
+    }
+
+    .active-players {
+        bottom: 0;
+        right: 70%;
+    }
+
+    /* home and nav end */
+
+
+
+    /* our games start */
+
+
+    .small-title::before {
+        left: 25%;
+    }
+
+    .small-title::after {
+        right: 25%;
+    }
+
+
+
+    .latest-rs,
+    .latest-rs-2 {
+        width: 50%;
+    }
+
+    .latest-rs-3 {
+        display: none;
+    }
+
+    /* our games end */
+
+
+    /* what we do start */
+
+    .we-do-rs,
+    .we-do-rs-img {
+        width: 50%;
+    }
+
+
+    .we-do-rs-img img {
+        height: 100%;
+    }
+
+    .holder::before {
+        width: 80%;
+        bottom: -5%;
+    }
+
+
+    /* what we do end */
+
+
+
+    /*our team start */
+
+
+    .team-rs {
+        width: 50%;
+    }
+
+    /*our team end */
+
+
+
+
+
+
+
+
+    /*contact us start */
+
+    .contact-rs {
+        flex-direction: column;
+        gap: 40px !important;
+    }
+
+    .details-rs,
+    .fname-rs,
+    .lname-rs,
+    .form-button {
+        width: 100%;
+    }
+
+    .form-rs {
+        width: 95%;
+        margin: auto;
+    }
+
+    .fname-rs,
+    .lname-rs {
+        width: 50%;
+    }
+
+
+
+    /*contact us end */
+
+
+
+    /*footer start */
+
+    .footer-rs {
+        flex-direction: row;
+        /* gap: 40px; */
+        row-gap: 30px;
+
+    }
+
+    .footer-rs-item {
+        width: 50%;
+    }
+
+    .social-visit {
+        gap: 50px !important;
+    }
+
+ 
+
+    .footer-rs-cright-2 {
+        width: 50%;
+        text-wrap: nowrap;
+    
+    }
+    
+
+
+    /*footer end */
+
+
+
+
+
+}
